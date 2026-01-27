@@ -19,7 +19,7 @@ export default function Home() {
         <div
           style={{
             display: "flex",
-            gap: "48px",
+            gap: "24px",
             alignItems: "center",
             marginTop: "32px",
             flexWrap: "wrap",
@@ -49,7 +49,7 @@ export default function Home() {
     marginLeft: "0px",
     color: "#d1d5db",
     lineHeight: "1.7",
-    textAlign: "left",
+    textAlign: "center",
             }}
           >
             <p>
