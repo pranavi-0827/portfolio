@@ -7,13 +7,18 @@ export default function Hero() {
   return (
     <section
       style={{
-        minHeight: "65vh",
-        paddingTop: "100px",   // space below navbar
-        paddingLeft: "300px",  // moved content to the right
-        paddingRight: "40px",
+           minHeight: "80vh",
+    paddingTop: "100px",
+    paddingLeft: "16px",
+    paddingRight: "16px",
+    maxWidth: "1100px",
+    margin: "0 auto",
       }}
     >
       <motion.div
+      style={{
+    textAlign: "left",
+  }}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -32,9 +37,9 @@ export default function Hero() {
         {/* Name */}
         <h1
           style={{
-            fontSize: "72px",
+            fontSize: "clamp(36px, 8vw, 72px)",
             fontWeight: 700,
-            lineHeight: "1.05",
+            lineHeight: "1.1",
             marginTop: "4px",
             marginBottom: "16px",
             background: "linear-gradient(90deg,#e5e7eb,#94a3b8)",
@@ -60,7 +65,7 @@ export default function Hero() {
         <p
           style={{
             color: "#9ca3af",
-            maxWidth: "720px",
+            maxWidth: "640px",
             lineHeight: "1.7",
             marginBottom: "28px",
           }}

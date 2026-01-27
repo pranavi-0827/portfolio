@@ -23,10 +23,11 @@ export default function Home() {
             alignItems: "flex-start",
             marginTop: "32px",
             flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
           {/* IMAGE */}
-          <div style={{ marginTop: "90px", flexShrink: 0 }}>
+          <div style={{ flexShrink: 0 }}>
             <img
               src="/images/profile.png"
               alt="Pranavi Nerella"
@@ -43,10 +44,12 @@ export default function Home() {
           {/* CONTENT */}
           <div
             style={{
-              maxWidth: "560px",
-              marginLeft: "150px",
-              color: "#d1d5db",
-              lineHeight: "1.7",
+              
+    maxWidth: "560px",
+    marginLeft: "0px",
+    color: "#d1d5db",
+    lineHeight: "1.7",
+    textAlign: "left",
             }}
           >
             <p>
@@ -230,7 +233,7 @@ export default function Home() {
           <div style={cardStyle}>
             <h3>Master of Science in Computer Science</h3>
             <p className="muted">University of Central Missouri, MO</p>
-            <p className="muted">2019 – 2023 </p>
+            <p className="muted">2023 – 2025 </p>
             <p className="muted">GPA: 3.5 / 4.0</p>
             <ul>
               <li>Focused on data analytics, databases, and applied machine learning.</li>
@@ -241,7 +244,7 @@ export default function Home() {
           <div style={cardStyle}>
             <h3>Bachelor of Technology in Computer Science</h3>
             <p className="muted">GITAM University, Hyderabad, India</p>
-            <p className="muted">2015 – 2019</p>
+            <p className="muted">2019 – 2023</p>
             <ul>
               <li>Built strong foundations in programming and data structures.</li>
               <li>Developed academic projects in data analysis and reporting.</li>
