@@ -4,6 +4,7 @@ import Section from "./components/Section";
 import SkillItem from "./components/SkillItem";
 import SkillCategory from "./components/SkillCategory";
 import { Mail, Linkedin, Github, FileText } from "lucide-react";
+import type { CSSProperties } from "react";
 
 export default function Home() {
   return (
@@ -366,7 +367,7 @@ const cardStyle = {
   padding: "20px",
 };
 
-const projectCardStyle = {
+const projectCardStyle: CSSProperties = {
   background: "rgba(255,255,255,0.04)",
   border: "1px solid rgba(255,255,255,0.08)",
   borderRadius: "16px",
