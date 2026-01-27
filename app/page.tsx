@@ -20,7 +20,7 @@ export default function Home() {
           style={{
             display: "flex",
             gap: "48px",
-            alignItems: "flex-start",
+            alignItems: "center",
             marginTop: "32px",
             flexWrap: "wrap",
             justifyContent: "center",
