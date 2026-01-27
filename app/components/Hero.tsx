@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       style={{
-           minHeight: "80vh",
+           minHeight: "100vh",
     paddingTop: "100px",
     paddingLeft: "16px",
     paddingRight: "16px",
