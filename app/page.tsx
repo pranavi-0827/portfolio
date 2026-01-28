@@ -16,65 +16,63 @@ export default function Home() {
 
       {/* ABOUT */}
       <Section id="about" title="About">
-        <div
-          style={{
-            display: "flex",
-            gap: "24px",
-            alignItems: "center",
-            marginTop: "32px",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          {/* IMAGE */}
-          <div style={{ flexShrink: 0 }}>
-            <img
-              src="/images/profile.png"
-              alt="Pranavi Nerella"
-              style={{
-                width: "200px",
-                height: "230px",
-                objectFit: "cover",
-                borderRadius: "12px",
-                border: "1px solid rgba(255,255,255,0.15)",
-              }}
-            />
-          </div>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: isMobile ? "column" : "row",
+      alignItems: "center",
+      gap: "32px",
+      marginTop: "32px",
+    }}
+  >
+    {/* IMAGE */}
+    <img
+      src="/images/profile.png"
+      alt="Pranavi Nerella"
+      style={{
+        width: isMobile ? "160px" : "200px",
+        height: isMobile ? "180px" : "230px",
+        objectFit: "cover",
+        borderRadius: "12px",
+        border: "1px solid rgba(255,255,255,0.15)",
+      }}
+    />
 
-          {/* CONTENT */}
-          <div
-            style={{
-              
-    maxWidth: "560px",
-    marginLeft: "0px",
-    color: "#d1d5db",
-    lineHeight: "1.7",
-    textAlign: "center",
-            }}
-          >
-            <p>
-              I am a Data Analyst with a strong foundation in data analysis,
-              reporting, and visualization, focused on transforming data into
-              insights that support informed business decisions.
-            </p>
+    {/* CONTENT */}
+    <div
+      style={{
+        maxWidth: "640px",
+        color: "#d1d5db",
+        lineHeight: "1.7",
+        textAlign: isMobile ? "center" : "left",
+      }}
+    >
+      <p>
+        I am a Data Analyst with a strong foundation in data analysis,
+        reporting, and visualization, focused on transforming data into
+        insights that support informed business decisions.
+      </p>
 
-            <p>
-              I have hands-on experience working with structured datasets using
-              Python, SQL, Excel, and Power BI to perform data cleaning,
-              exploratory analysis, and build meaningful reports and dashboards.
-            </p>
+      <p>
+        I have hands-on experience working with structured datasets using
+        Python, SQL, Excel, and Power BI to perform data cleaning,
+        exploratory analysis, and build meaningful reports and dashboards.
+      </p>
 
-            <p>
-              I am comfortable analyzing trends, identifying patterns, and
-              validating data accuracy to ensure reliable outcomes while
-              maintaining data quality.
-            </p>
+      <p>
+        I am comfortable analyzing trends, identifying patterns, and
+        validating data accuracy to ensure reliable outcomes while
+        maintaining data quality.
+      </p>
 
-            <p>
-              I enjoy collaborating with stakeholders and presenting insights
-              in a clear, concise manner for both technical and non-technical
-              audiences.
-            </p>
+      <p>
+        I enjoy collaborating with stakeholders and presenting insights
+        clearly for both technical and non-technical audiences.
+      </p>
+    </div>
+  </div>
+</Section>
+
 
             {/* TOOLS STACK */}
             <div style={{ marginTop: "32px" }}>

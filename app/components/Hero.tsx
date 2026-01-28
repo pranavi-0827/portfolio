@@ -18,7 +18,7 @@ export default function Hero() {
     <section
       style={{
         minHeight: isMobile ? "auto" : "100vh",
-        paddingTop: isMobile ? "80px" : "100px",
+        paddingTop: isMobile ? "64px" : "100px",
         paddingLeft: "16px",
         paddingRight: "16px",
         maxWidth: "1100px",
@@ -36,7 +36,7 @@ export default function Hero() {
 
         <h1
           style={{
-            fontSize: isMobile ? "40px" : "clamp(48px, 6vw, 72px)",
+            fontSize: isMobile ? "32px" : "clamp(48px, 6vw, 72px)",
             lineHeight: "1.1",
             fontWeight: 700,
             marginBottom: "16px",
@@ -68,14 +68,16 @@ export default function Hero() {
           href="/resume.pdf"
           target="_blank"
           style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "10px",
-            border: "1px solid #334155",
-            padding: "10px 20px",
-            borderRadius: "8px",
-            color: "#fff",
-            textDecoration: "none",
+                display: "inline-flex",
+  alignItems: "center",
+  justifyContent: isMobile ? "center" : "flex-start",
+  gap: "10px",
+  border: "1px solid #334155",
+  padding: "10px 20px",
+  borderRadius: "8px",
+  color: "#fff",
+  textDecoration: "none",
+
           }}
         >
           <FileText size={18} />
