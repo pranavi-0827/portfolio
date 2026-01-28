@@ -18,35 +18,35 @@ export default function Home() {
       <Section id="about" title="About">
   <div
     style={{
-    display: "flex",
-    flexDirection: "column",      // ✅ mobile-first
-    gap: "24px",
-    alignItems: "center",
-    marginTop: "32px",
+      display: "flex",
+       gap: "24px",
+        alignItems: "center",
+         marginTop: "32px",
+          flexWrap: "wrap",
+           justifyContent: "center",
     }}
   >
     {/* IMAGE */}
     <img
       src="/images/profile.png"
-    alt="Pranavi Nerella"
-    style={{
-      width: "200px",
-      height: "230px",
-      objectFit: "cover",
-      borderRadius: "12px",
-      border: "1px solid rgba(255,255,255,0.15)",
+      alt="Pranavi Nerella"
+      style={{
+        width: "200px",
+         height: "230px",
+          objectFit: "cover",
+           borderRadius: "12px",
+            border: "1px solid rgba(255,255,255,0.15)",
       }}
     />
 
     {/* CONTENT */}
     <div
-       style={{
-    width: "100%",              // ✅ allows full mobile width
-    maxWidth: "640px",           // ✅ nice readable limit
-    padding: "0 12px",           // ✅ prevents edge touching
-    color: "#d1d5db",
-    lineHeight: "1.7",
-    textAlign: "center",
+    style={{
+      maxWidth: "560px",
+       marginLeft: "0px",
+        color: "#d1d5db",
+         lineHeight: "1.7",
+          textAlign: "center",
       }}
     >
       <p>
@@ -71,10 +71,9 @@ export default function Home() {
         I enjoy collaborating with stakeholders and presenting insights
         clearly for both technical and non-technical audiences.
       </p>
-    </div>
-  </div>
-</Section>
+    
 
+    
 
             {/* TOOLS STACK */}
             <div style={{ marginTop: "32px" }}>
@@ -120,6 +119,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
+      
 
       <Section id="projects" title="Projects">
   <div
