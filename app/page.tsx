@@ -18,33 +18,35 @@ export default function Home() {
       <Section id="about" title="About">
   <div
     style={{
-      display: "flex",
-      flexDirection: isMobile ? "column" : "row",
-      alignItems: "center",
-      gap: "32px",
-      marginTop: "32px",
+    display: "flex",
+    flexDirection: "column",      // ✅ mobile-first
+    gap: "24px",
+    alignItems: "center",
+    marginTop: "32px",
     }}
   >
     {/* IMAGE */}
     <img
       src="/images/profile.png"
-      alt="Pranavi Nerella"
-      style={{
-        width: isMobile ? "160px" : "200px",
-        height: isMobile ? "180px" : "230px",
-        objectFit: "cover",
-        borderRadius: "12px",
-        border: "1px solid rgba(255,255,255,0.15)",
+    alt="Pranavi Nerella"
+    style={{
+      width: "200px",
+      height: "230px",
+      objectFit: "cover",
+      borderRadius: "12px",
+      border: "1px solid rgba(255,255,255,0.15)",
       }}
     />
 
     {/* CONTENT */}
     <div
-      style={{
-        maxWidth: "640px",
-        color: "#d1d5db",
-        lineHeight: "1.7",
-        textAlign: isMobile ? "center" : "left",
+       style={{
+    width: "100%",              // ✅ allows full mobile width
+    maxWidth: "640px",           // ✅ nice readable limit
+    padding: "0 12px",           // ✅ prevents edge touching
+    color: "#d1d5db",
+    lineHeight: "1.7",
+    textAlign: "center",
       }}
     >
       <p>

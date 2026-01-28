@@ -17,12 +17,14 @@ export default function Hero() {
   return (
     <section
       style={{
-        minHeight: isMobile ? "auto" : "100vh",
-        paddingTop: isMobile ? "64px" : "100px",
-        paddingLeft: "16px",
-        paddingRight: "16px",
-        maxWidth: "1100px",
-        margin: "0 auto",
+         
+    minHeight: isMobile ? "auto" : "100vh",
+    paddingTop: isMobile ? "80px" : "100px",
+    paddingLeft: "16px",
+    paddingRight: "16px",
+    width: "100%",                 // ✅ KEY FIX
+    maxWidth: isMobile ? "100%" : "1100px", // ✅ KEY FIX
+    margin: "0 auto",
       }}
     >
       <motion.div
